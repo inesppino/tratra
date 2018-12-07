@@ -12,13 +12,15 @@ fetch('https://api.github.com/users/' + input.value)
    const result = document.querySelector('.resultingname');
        result.innerHTML = data.name;
 
+        //Aqui del nombre y apellido te coge solo el nombre
        let sentence = data.name;
 
        let gitname = sentence.split(" ", 1);
-       
-    //    let pieces = gitname.split("");
-       
        console.log(gitname);
+
+       //Aqui donde dividimos el nombre y lo pintamos letra por letra
+       let pieces = gitname.split("");
+       console.log(pieces);
  });
 }
 
