@@ -1,0 +1,10 @@
+@import 'core/settings';
+@import 'pages/page';
+
+body {
+	margin: 0;
+}
+
+.page{
+    background-color: $color-green-light;
+}
