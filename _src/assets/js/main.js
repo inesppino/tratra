@@ -10,17 +10,19 @@ fetch('https://api.github.com/users/' + input.value)
  .then(response => response.json())
  .then(data => {
    const result = document.querySelector('.resultingname');
-       result.innerHTML = data.name;
 
         //Aqui del nombre y apellido te coge solo el nombre
        let sentence = data.name;
 
-       let gitname = sentence.split(" ", 1);
-       console.log(gitname);
+       let fullName = sentence.split(" ");
+       console.log(fullName);
 
        //Aqui donde dividimos el nombre y lo pintamos letra por letra
+       let gitname = fullName[0];
        let pieces = gitname.split("");
        console.log(pieces);
+    
+   result.innerHTML = pieces;
  });
 }
 
