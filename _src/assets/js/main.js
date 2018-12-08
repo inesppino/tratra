@@ -2,6 +2,7 @@
 
 const input = document.querySelector('#user');
 const btn = document.querySelector('.search-btn');
+const list = document.querySelector('.list-name');
 
 //Al hacer click en buscar, pedir a Github la información sobre la usuaria en su API
 
@@ -22,7 +23,11 @@ fetch('https://api.github.com/users/' + input.value)
        let pieces = gitname.split("");
        console.log(pieces);
     
-   result.innerHTML = pieces;
+       let acc = 0;
+       for (let i = 0; i < pieces.length; i++) {
+         const letter = pieces[i];
+         console.log(`${letter}`);
+   }
  });
 }
 
