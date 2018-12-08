@@ -26,7 +26,7 @@ function github(e) {
       //Aqui pinta en una lista ordenada las letras del nombre
       for (let i = 0; i < pieces.length; i++) {
         const letter = pieces[i];
-        list.innerHTML += `<li>${[letter]}</li>`;
+        list.innerHTML += `<li class="square">${[letter]}</li>`;
       }
     });
 }

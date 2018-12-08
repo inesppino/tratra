@@ -1,4 +1,40 @@
+
+.finder{
+    text-align: center;
+}
+
+.search{
+    margin-top: 10px;
+}
+.instructions{
+    color: $color-green-dark;
+}
 .search-btn{
     background-color: $color-green-dark;
     color: #fff;
+    border: 0px;
+    padding: 5px 15px;
+}
+
+.list-name{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 200px;
+}
+
+.square{
+    background-color: #fff;
+    height: 200px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 180px;
+    color: $color-green-dark;
+    border-radius: solid 5px silver;
+    margin: 0 10px;
+    text-transform: capitalize;
 }
