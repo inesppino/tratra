@@ -13,21 +13,24 @@ function github(e) {
       const result = document.querySelector('.resultingname');
 
       //Aqui del nombre y apellido te coge solo el nombre
-      let sentence = data.name;
+      const sentence = data.name;
 
-      let fullName = sentence.split(" ");
+      const fullName = sentence.split(" ");
       console.log(fullName);
 
       //Aqui donde dividimos el nombre y lo pintamos letra por letra
-      let gitname = fullName[0];
+      const gitname = fullName[0];
       let pieces = gitname.split("");
       console.log(pieces);
 
       //Aqui pinta en una lista ordenada las letras del nombre
+      let names = '';
       for (let i = 0; i < pieces.length; i++) {
         const letter = pieces[i];
-        list.innerHTML += `<li class="square">${[letter]}</li>`;
+        names += `<li class="square">${[letter]}</li>`;
       }
+      //Se saca del bucle para que lo pinte una vez
+      list.innerHTML = names;
     });
 }
 
